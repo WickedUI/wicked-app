@@ -498,7 +498,7 @@ Message: ${data.message}
 								<Github className={`h-6 w-6 ${isDarkMode ? 'text-gray-300 group-hover:text-indigo-400' : 'text-gray-700 group-hover:text-indigo-600'}`} />
 							</a>
 							<a
-								href="https://linkedin.com/stephen-prahl"
+								href="https://linkedin.com/in/stephen-prahl"
 								className={`p-3 rounded-full transition-all duration-300 transform hover:scale-110 ${isDarkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-gray-100 hover:bg-gray-200'
 									} group`}
 								target="_blank"
