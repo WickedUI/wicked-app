@@ -1,0 +1,6 @@
+{
+  "dataworkspace.excludedProjects": [
+    "stephen/stephen.sqlproj"
+  ],
+  "dbcode.connections": []
+}
