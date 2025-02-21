@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, CheckCircle, ChevronRight, Code2, Github, Globe, Laptop, Layout, Linkedin, Mail, Menu, Moon, Sun, X } from 'lucide-react';
+import { ArrowRight, CheckCircle, ChevronRight, Code2, Github, Globe, Laptop, Layout, Linkedin, Youtube, Mail, Menu, Moon, Sun, X } from 'lucide-react';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
@@ -64,7 +64,7 @@ Message: ${data.message}
 					<div className="flex justify-between h-16 items-center">
 						<div className="flex items-center">
 							<Code2 className="h-8 w-8 text-indigo-600 animate-pulse" />
-							<span className={`ml-2 text-xl font-bold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>DevCraft</span>
+							<span className={`ml-2 text-xl font-bold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>WickedUI</span>
 						</div>
 						<div className="hidden md:flex items-center space-x-8">
 							<a href="#services" className={`transition-colors duration-300 ${isDarkMode ? 'text-gray-300 hover:text-indigo-400' : 'text-gray-600 hover:text-indigo-600'}`}>Services</a>
@@ -323,23 +323,23 @@ Message: ${data.message}
 					<div className="grid md:grid-cols-3 gap-8">
 						{[
 							{
-								quote: "Working with DevCraft was a game-changer for our business. They delivered a stunning website that exceeded our expectations.",
+								quote: "Working with WickedUI was a game-changer for our business. They delivered a stunning website that exceeded our expectations. At first after a few failed attempts by other companys to deliver the results we asked for we had decided enough is enough, one of the new employees we hired told us about Stephen and we reached out to him and it's great that we did.",
 								author: "Sarah Johnson",
 								role: "CEO, TechStart",
 								image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200"
 							},
 							{
-								quote: "The team's technical expertise and attention to detail made our project a huge success. Highly recommended!",
+								quote: "Stephen's technical expertise and attention to detail made our project a huge success. At first we were sceptical and was unsure he could fulfill our needs when he mentioned he had only just started a dev company, yet he went above and beyond them. I highly recommended him and his business WickedUI!",
 								author: "Michael Chen",
 								role: "CTO, InnovateCo",
 								image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200"
 							},
 							{
-								quote: "Professional, responsive, and delivered exactly what we needed. Our new platform has transformed our operations.",
+								quote: "Professional, responsive, and delivered exactly what we needed. Our new platform has transformed our operations, after multiple contracts with other developers we were ready to give up and just settle for what we could find, and then Stephen showed up saying he's from WickedUI and not to worry,we are grateful to have found him.",
 								author: "Emily Rodriguez",
 								role: "Director, GlobalTech",
 								image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200"
-							}
+							},
 						].map((testimonial, index) => (
 							<div
 								key={index}
@@ -482,14 +482,14 @@ Message: ${data.message}
 
 						<div className="mt-12 flex justify-center space-x-6">
 							<a
-								href="mailto:contact@devcraft.com"
+								href="mailto:stephenprahl@gmail.com"
 								className={`p-3 rounded-full transition-all duration-300 transform hover:scale-110 ${isDarkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-gray-100 hover:bg-gray-200'
 									} group`}
 							>
 								<Mail className={`h-6 w-6 ${isDarkMode ? 'text-gray-300 group-hover:text-indigo-400' : 'text-gray-700 group-hover:text- indigo-600'}`} />
 							</a>
 							<a
-								href="https://github.com"
+								href="https://github.com/stephenprahl"
 								className={`p-3 rounded-full transition-all duration-300 transform hover:scale-110 ${isDarkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-gray-100 hover:bg-gray-200'
 									} group`}
 								target="_blank"
@@ -498,13 +498,22 @@ Message: ${data.message}
 								<Github className={`h-6 w-6 ${isDarkMode ? 'text-gray-300 group-hover:text-indigo-400' : 'text-gray-700 group-hover:text-indigo-600'}`} />
 							</a>
 							<a
-								href="https://linkedin.com"
+								href="https://linkedin.com/stephen-prahl"
 								className={`p-3 rounded-full transition-all duration-300 transform hover:scale-110 ${isDarkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-gray-100 hover:bg-gray-200'
 									} group`}
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								<Linkedin className={`h-6 w-6 ${isDarkMode ? 'text-gray-300 group-hover:text-indigo-400' : 'text-gray-700 group-hover:text-indigo-600'}`} />
+							</a>
+							<a
+								href="https://youtube.com/@wickedui"
+								className={`p-3 rounded-full transition-all duration-300 transform hover:scale-110 ${isDarkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-gray-100 hover:bg-gray-200'
+									} group`}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Youtube className={`h-6 w-6 ${isDarkMode ? 'text-gray-300 group-hover:text-indigo-400' : 'text-gray-700 group-hover:text-indigo-600'}`} />
 							</a>
 						</div>
 					</div>
@@ -518,7 +527,7 @@ Message: ${data.message}
 						<div>
 							<div className="flex items-center mb-4">
 								<Code2 className="h-6 w-6 text-indigo-600" />
-								<span className={`ml-2 text-xl font-bold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>DevCraft</span>
+								<span className={`ml-2 text-xl font-bold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>WickedUI</span>
 							</div>
 							<p className={`text-sm transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
 								Crafting exceptional digital experiences for forward-thinking businesses.
@@ -543,13 +552,13 @@ Message: ${data.message}
 						<div>
 							<h4 className={`font-semibold mb-4 transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Contact</h4>
 							<ul className="space-y-2 text-sm">
-								<li><a href="mailto:contact@devcraft.com" className={`transition-colors duration-300 ${isDarkMode ? 'text-gray-300 hover:text-indigo-400' : 'text-gray-600 hover:text-indigo-600'}`}>contact@devcraft.com</a></li>
-								<li><a href="tel:+1234567890" className={`transition-colors duration-300 ${isDarkMode ? 'text-gray-300 hover:text-indigo-400' : 'text-gray-600 hover:text-indigo-600'}`}>+1 (234) 567-890</a></li>
+								<li><a href="mailto:contact@devcraft.com" className={`transition-colors duration-300 ${isDarkMode ? 'text-gray-300 hover:text-indigo-400' : 'text-gray-600 hover:text-indigo-600'}`}>stephenprahl@gmail.com</a></li>
+								<li><a href="tel:+1234567890" className={`transition-colors duration-300 ${isDarkMode ? 'text-gray-300 hover:text-indigo-400' : 'text-gray-600 hover:text-indigo-600'}`}>+1 (732)-239-7341</a></li>
 							</ul>
 						</div>
 					</div>
 					<div className={`border-t pt-8 transition-colors duration-300 ${isDarkMode ? 'border-gray-700' : 'border-gray-200'}`}>
-						<p className={`text-sm text-center transition-colors duration-300 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>© 2025 DevCraft. All rights reserved.</p>
+						<p className={`text-sm text-center transition-colors duration-300 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>© 2025 WickedUI. All rights reserved.</p>
 					</div>
 				</div>
 			</footer>
