@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, CheckCircle, ChevronRight, Code2, Github, Globe, Laptop, Layout, Linkedin, Youtube, Mail, Menu, Moon, Sun, X } from 'lucide-react';
+import { ArrowRight, CheckCircle, ChevronRight, Code2, Github, Globe, Laptop, Layout, Linkedin, Mail, Menu, Moon, Sun, X, Youtube } from 'lucide-react';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
@@ -53,7 +53,7 @@ Budget: ${data.budget}
 Message: ${data.message}
 		`);
 
-		window.location.href = `mailto:contact@devcraft.com?subject=${subject}&body=${body}`;
+		window.location.href = `mailto:stephen@wicked-ui.com?subject=${subject}&body=${body}`;
 	};
 
 	return (
@@ -63,8 +63,19 @@ Message: ${data.message}
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="flex justify-between h-16 items-center">
 						<div className="flex items-center">
-							<Code2 className="h-8 w-8 text-indigo-600 animate-pulse" />
-							<span className={`ml-2 text-xl font-bold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Wicked-UI</span>
+							<a
+								href="#"
+								className="flex items-center"
+								onClick={(e) => {
+									e.preventDefault();
+									window.scrollTo({ top: 0, behavior: 'smooth' });
+								}}
+							>
+								<Code2 className="h-8 w-8 text-indigo-600 animate-pulse" />
+								<span className={`ml-2 text-xl font-bold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
+									Wicked-UI
+								</span>
+							</a>
 						</div>
 						<div className="hidden md:flex items-center space-x-8">
 							<a href="#services" className={`transition-colors duration-300 ${isDarkMode ? 'text-gray-300 hover:text-indigo-400' : 'text-gray-600 hover:text-indigo-600'}`}>Services</a>
@@ -526,8 +537,19 @@ Message: ${data.message}
 					<div className="grid md:grid-cols-4 gap-8 mb-8">
 						<div>
 							<div className="flex items-center mb-4">
-								<Code2 className="h-6 w-6 text-indigo-600" />
-								<span className={`ml-2 text-xl font-bold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Wicked-UI</span>
+								<a
+									href="#"
+									className="flex items-center"
+									onClick={(e) => {
+										e.preventDefault();
+										window.scrollTo({ top: 0, behavior: 'smooth' });
+									}}
+								>
+									<Code2 className="h-6 w-6 text-indigo-600" />
+									<span className={`ml-2 text-xl font-bold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
+										Wicked-UI
+									</span>
+								</a>
 							</div>
 							<p className={`text-sm transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
 								Crafting exceptional digital experiences for forward-thinking businesses.
